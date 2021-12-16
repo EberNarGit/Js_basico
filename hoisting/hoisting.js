@@ -11,7 +11,7 @@
 saludo();
 
 function saludo() {
-    console.log("Hola " + nombre);
+    console.log("saludos " + nombre);
 }
 
 //al declararse al ultimo el valor de salida sera undefined
