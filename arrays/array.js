@@ -19,7 +19,7 @@ console.log(frutas);
 frutas.unshift("Cereza");
 console.log(frutas);
 
-// eliminar el primer elemento del array
+// eliminar el primer elemento del arra
 frutas.shift();
 console.log(frutas);
 
