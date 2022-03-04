@@ -98,3 +98,12 @@ function calcularPerimetroTriangulo(){
     const perimetro =  perimetroTriangulo(value1,value2,value3);
     alert("El perimetro del triangulo es: " + perimetro);
 }
+
+function calcularAreaTriangulo(){
+    const base = document.getElementById("base");
+    const value3 = Number(base.value);
+    const altura = document.getElementById("altura");
+    const value4 = Number(altura.value);
+    const area =  areaTriangulo(value3,value4);
+    alert("El perimetro del triangulo es: " + area);
+}
