@@ -107,3 +107,34 @@ function calcularAreaTriangulo(){
     const area =  areaTriangulo(value3,value4);
     alert("El perimetro del triangulo es: " + area);
 }
+
+function calcularAltura(){
+    const lado1 = document.getElementById("lado1");
+    const value1 = Number(lado1.value);
+    const lado2 = document.getElementById("lado2");
+    const value2 = Number(lado2.value);
+    const base = document.getElementById("base");
+    const value3 = Number(base.value);
+    const h =  calcularAlturaTriangulo(value1,value2,value3);
+    alert(h);
+}
+
+function calcularAlturaTriangulo(a,b,c){
+    if(a==b & a!=c || a==c & a!=b || b==c & b!=a){
+        altura = Math.sqrt(a**2-(b**2/4));
+        tipo = "isosceles";
+        resultado = ("la altura del triangulo tipo: " + tipo + " es " + altura + " cm" );
+    }
+    else if(a==b & a==c & b==c){
+        altura = Math.sqrt(3*a)/2
+        tipo = "equilatero";
+        resultado = ("la altura del triangulo tipo: " + tipo + " es " + altura + " cm" );
+    }
+    else if (a!=b & a!=c & b!=c){
+        s = (a+b+c)/2;
+        altura= 2/a * Math.sqrt(s*(s-a)*(s-b)*(s-c))
+        tipo = "escaleno";
+        resultado = ("la altura del triangulo tipo: " + tipo + " es " + altura + " cm" );
+    }
+    return resultado;
+}
