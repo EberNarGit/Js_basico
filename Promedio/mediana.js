@@ -1,3 +1,8 @@
+function compareNumbers(a, b) {
+    return a - b;
+  }
+
+
 function calcularMediaAritmetica(lista){
     // let sumaLista = 0;
     // for (let i = 0; i < lista.length; i++){
@@ -17,6 +22,7 @@ function calcularMediaAritmetica(lista){
 
 
 function calcularMediana(lista){
+
     // let sumaLista = 0;
     // for (let i = 0; i < lista.length; i++){
     //     sumaLista = sumaLista + lista[i];
